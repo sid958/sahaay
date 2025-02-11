@@ -26,7 +26,7 @@ async function sendMessage() {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${OPENROUTER_API_KEY}`,
-        'HTTP-Referer': 'http://localhost:5173',
+        'HTTP-Referer': 'https://sahaay-ivory.vercel.app/',
         'X-Title': 'Sahaay - Recovery Support App'
       },
       body: JSON.stringify({
