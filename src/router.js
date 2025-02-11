@@ -3,6 +3,7 @@ import Home from './components/Home.vue'
 import DailyProgress from './components/DailyProgress.vue'
 import Community from './components/Community.vue'
 import Resources from './components/Resources.vue'
+import ChatBuddy from './components/ChatBuddy.vue'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/resources',
     name: 'Resources',
     component: Resources
+  },
+  {
+    path: '/chat',
+    name: 'ChatBuddy',
+    component: ChatBuddy
   }
 ]
 

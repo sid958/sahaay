@@ -49,6 +49,9 @@ const navigateTo = (route) => {
         <a @click="navigateTo('/resources')" :class="{ 'active': $route.path === '/resources' }">
           Resources
         </a>
+        <a @click="navigateTo('/chat')" :class="{ 'active': $route.path === '/chat' }">
+          Chat with Sahayak
+        </a>
       </nav>
     </div>
   </div>
