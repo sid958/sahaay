@@ -5,7 +5,7 @@ const messages = ref([])
 const newMessage = ref('')
 const isTyping = ref(false)
 
-const OPENROUTER_API_KEY = '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'
+const OPENROUTER_API_KEY = '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'
 
 async function sendMessage() {
   if (!newMessage.value.trim()) return
@@ -34,7 +34,7 @@ async function sendMessage() {
         messages: [
           {
             role: 'system',
-            content: `You are a supportive and empathetic AI buddy named Sahayak, helping people overcome their addictions. 
+            content: `You are a supportive and empathetic AI buddy named Sahaya, helping people overcome their addictions. 
             You should be compassionate, non-judgmental, and encouraging. Focus on:
             1. Active listening and validation of feelings
             2. Providing coping strategies and practical advice
