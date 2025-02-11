@@ -5,7 +5,7 @@ const messages = ref([])
 const newMessage = ref('')
 const isTyping = ref(false)
 
-const OPENROUTER_API_KEY = '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'
+const OPENROUTER_API_KEY = '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'
 
 async function sendMessage() {
   if (!newMessage.value.trim()) return
@@ -26,7 +26,7 @@ async function sendMessage() {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${OPENROUTER_API_KEY}`,
-        'HTTP-Referer': 'https://sahaay.app',
+        'HTTP-Referer': 'http://localhost:5173',
         'X-Title': 'Sahaay - Recovery Support App'
       },
       body: JSON.stringify({
