@@ -1,7 +1,7 @@
 <script setup>
-import Home from './components/Home.vue'
+// Any app-wide setup can go here
 </script>
 
 <template>
-  <Home/>
+  <router-view></router-view>
 </template>
