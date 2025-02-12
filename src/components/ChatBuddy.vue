@@ -5,7 +5,7 @@ const messages = ref([])
 const newMessage = ref('')
 const isTyping = ref(false)
 
-const OPENROUTER_API_KEY = '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'
+const OPENROUTER_API_KEY = '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'
 
 async function sendMessage() {
   if (!newMessage.value.trim()) return
