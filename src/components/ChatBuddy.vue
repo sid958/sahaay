@@ -5,7 +5,7 @@ const messages = ref([])
 const newMessage = ref('')
 const isTyping = ref(false)
 
-const OPENROUTER_API_KEY = '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'
+const OPENROUTER_API_KEY = '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'
 
 async function sendMessage() {
   if (!newMessage.value.trim()) return
@@ -26,7 +26,7 @@ async function sendMessage() {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${OPENROUTER_API_KEY}`,
-        'HTTP-Referer': 'https://sahaay.app',
+        'HTTP-Referer': 'https://sahaay-ivory.vercel.app/',
         'X-Title': 'Sahaay - Recovery Support App'
       },
       body: JSON.stringify({
@@ -34,7 +34,7 @@ async function sendMessage() {
         messages: [
           {
             role: 'system',
-            content: `You are a supportive and empathetic AI buddy named Sahayak, helping people overcome their addictions. 
+            content: `You are a supportive and empathetic AI buddy named Sahaya, helping people overcome their addictions. 
             You should be compassionate, non-judgmental, and encouraging. Focus on:
             1. Active listening and validation of feelings
             2. Providing coping strategies and practical advice

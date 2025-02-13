@@ -84,7 +84,7 @@ const navigateTo = (route) => {
 .hamburger span {
   width: 2rem;
   height: 0.25rem;
-  background: #fff;
+  background: hsl(0, 2%, 18%);
   border-radius: 10px;
   transition: all 0.3s linear;
   position: relative;
